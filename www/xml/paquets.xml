@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<table>
+
+ <paquet>
+  <id_paquet>01</id_paquet>
+  <bultos>2</bultos>
+  <direccio>Av. Sant Roc</direccio>
+  <poblacio>Tarrega</poblacio>
+  <codi_postal>25300</codi_postal>
+  <num_envio>008321</num_envio>
+  <latitud>41.639926</latitud>
+  <longitud>1.139035</longitud>
+  <entregat>false</entregat>
+ </paquet>
+ 
+ <paquet>
+  <id_paquet>02</id_paquet>
+  <bultos>1</bultos>
+  <direccio>Av. Catalunya</direccio>
+  <poblacio>Anglesola</poblacio>
+  <codi_postal>25310</codi_postal>
+  <num_envio>008322</num_envio>
+  <latitud>41.640083</latitud>
+  <longitud>1.139740</longitud>
+  <entregat>false</entregat>
+ </paquet>
+ 
+  <paquet>
+  <id_paquet>03</id_paquet>
+  <bultos>4</bultos>
+  <direccio>C/La pula</direccio>
+  <poblacio>Lleida</poblacio>
+  <codi_postal>25356</codi_postal>
+  <num_envio>008323</num_envio>
+  <latitud>41.638616</latitud>
+  <longitud>1.139407</longitud>
+  <entregat>false</entregat>
+ </paquet>
+ 
+ <paquet>
+  <id_paquet>04</id_paquet>
+  <bultos>1</bultos>
+  <direccio>Av. Catalunya</direccio>
+  <poblacio>Anglesola</poblacio>
+  <codi_postal>25310</codi_postal>
+  <num_envio>008322</num_envio>
+  <latitud>41.640053</latitud>
+  <longitud>1.139240</longitud>
+  <entregat>false</entregat>
+ </paquet>
+ 
+ <paquet>
+  <id_paquet>05</id_paquet>
+  <bultos>1</bultos>
+  <direccio>Av. Catalunya</direccio>
+  <poblacio>Anglesola</poblacio>
+  <codi_postal>25310</codi_postal>
+  <num_envio>008322</num_envio>
+  <latitud>41.540083</latitud>
+  <longitud>1.159740</longitud>
+  <entregat>true</entregat>
+ </paquet>
+ 
+ <paquet>
+  <id_paquet>06</id_paquet>
+  <bultos>1</bultos>
+  <direccio>Av. Catalunya</direccio>
+  <poblacio>Anglesola</poblacio>
+  <codi_postal>25310</codi_postal>
+  <num_envio>008322</num_envio>
+  <latitud>41.660083</latitud>
+  <longitud>1.136740</longitud>
+  <entregat>false</entregat>
+ </paquet>
+ 
+ <paquet>
+  <id_paquet>07</id_paquet>
+  <bultos>1</bultos>
+  <direccio>Av. Catalunya</direccio>
+  <poblacio>Anglesola</poblacio>
+  <codi_postal>25310</codi_postal>
+  <num_envio>008322</num_envio>
+  <latitud>41.740083</latitud>
+  <longitud>1.179740</longitud>
+  <entregat>false</entregat>
+ </paquet>
+ 
+ <paquet>
+  <id_paquet>08</id_paquet>
+  <bultos>1</bultos>
+  <direccio>Av. Catalunya</direccio>
+  <poblacio>Anglesola</poblacio>
+  <codi_postal>25310</codi_postal>
+  <num_envio>008322</num_envio>
+  <latitud>41.840083</latitud>
+  <longitud>1.189740</longitud>
+  <entregat>false</entregat>
+ </paquet>
+ 
+ <paquet>
+  <id_paquet>09</id_paquet>
+  <bultos>1</bultos>
+  <direccio>Av. Catalunya</direccio>
+  <poblacio>Anglesola</poblacio>
+  <codi_postal>25310</codi_postal>
+  <num_envio>008322</num_envio>
+  <latitud>41.940083</latitud>
+  <longitud>1.199740</longitud>
+  <entregat>false</entregat>
+
+ </paquet>
+ 
+</table>
