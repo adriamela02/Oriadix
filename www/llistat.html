@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/llistat.css">
+    <title>Oriadix</title>
+</head>
+
+<body>
+    <div class="all">
+        <div class="app">
+            <h1>Llistat de les entregues</h1>
+            <h2>Nº d'entrega:</h2>
+            <div class="taula">
+                <table id="tllistat"></table> 
+                
+               
+            </div>
+            <button class="botoMapa"><a id="aBoto" href="mapa.html">Mapa</a></button>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("load" ,function(){
+            loadXMLDoc();
+        });
+
+        var envio = [];
+        
+      function loadXMLDoc() {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            myFunction(this);
+          }
+        };
+        // xmlhttp.open("GET", "http://172.20.10.12/paquets.xml", true);
+        xmlhttp.open("GET", "http://192.168.1.193/paquets.xml", true);
+
+
+        xmlhttp.send();
+      }
+      function myFunction(xml) {
+        var xmlDoc = xml.responseXML;
+        var table="<tr id='titolTaula'><th id='idT'>ID</th><th id='num'>Num.envio</th><th id='estat'>Estat</th></tr>";
+        var x = xmlDoc.getElementsByTagName("paquet");
+
+        var imgEntregat = document.createElement("img");
+        imgEntregat.src = "img/logo_entregat.png";
+
+        var imgNoEntregat = document.createElement("img");
+        imgNoEntregat.src = "img/logo_noentregat.png";
+        
+        for (var i = 0; i <x.length; i++){ 
+          
+          idPaquet = x[i].getElementsByTagName("id_paquet")[0].childNodes[0].nodeValue;
+          numEnvio = x[i].getElementsByTagName("num_envio")[0].childNodes[0].nodeValue;
+          estat = x[i].getElementsByTagName("entregat")[0].childNodes[0].nodeValue;
+          
+          envio.push([i, idPaquet, numEnvio, estat]);
+
+          table += "  <tr><td>" +
+           idPaquet +
+          "</td><td>" +
+           numEnvio +
+          "</td><td>" +
+            estat.replace("false","<img src='"+imgNoEntregat.src+"' alt=''/>").replace("true","<img src='"+imgEntregat.src+"' alt=''/>") +
+          "</td></tr>";
+        }
+        document.getElementById("tllistat").innerHTML = table;
+      }
+    </script>
+</body>
+
+</html>
